@@ -1,0 +1,298 @@
+/*
+Theme Name:     twentytwelve_child
+Theme URI:      http://example.com/
+Description:    Thème enfant pour le thème Twenty Twelve
+Author:         Alexandre reculé
+Author URI:     http://example.com/about/
+Template:       twentytwelve                           
+Version:        0.1.0
+*/
+@import url("../twentytwelve/style.css");
+
+/*html{
+	background: rgb(101, 92, 137);
+		font-family: "Lato", sans-serif;
+}*/
+a:active,a:focus {
+	outline: expression(hideFocus='true');
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+#tabs,#tabs2,#tabs3,#tabs4,#tabs5 {
+	width: 745px;
+	height: 700px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	position: relative;
+	float: left;
+	background: url("images/tableau4.jpg") no-repeat scroll 0 0px rgba(0, 0, 0, 0);
+	left: 20px;
+}
+
+#tabs li,#tabs2 li,#tabs3 li,#tabs4 li,#tabs5 li,#tabs5 li {
+	/*float: left;
+	margin-right: 2px;*/
+	width: 190px;
+}
+
+#tabs li a,#tabs2 li a,#tabs3 li a,#tabs4 li a,#tabs5 li a,#tabs6 li a {
+	display: block;
+	padding: 17px 30px;
+	text-decoration: none;
+	color: #8478B3;
+	font-weight: bold;
+}
+
+#tabs li a:hover,#tabs2 li a:hover,#tabs3 li a:hover,#tabs4 li a:hover,#tabs5 li a:hover,#tabs6 li a:hover {
+	background: url("images/liste.jpg") no-repeat;
+}
+
+#tabs ul{
+	margin: 80px 32px 10px;
+}
+/*************************************************************************
+*************************** Tableaux de prix *****************************
+*************************************************************************/
+
+.tarifs table {
+    width: 100%; 
+}
+
+.tarifs table tr{
+    font-family:'Lucida Caligraphy','Monotype Corsiva',cursive;
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+.tarifs td {
+    border-bottom: 1px dotted #2D140B;
+}
+
+.prix {
+    color: #E5A728;
+    font-weight: bold;
+    text-align: right;
+    width: 70px;	
+}
+/*************************************************************************
+*************************** Effet interactifs *****************************
+*************************************************************************/
+.transition {
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+
+	-webkit-transition-delay: .3s;
+	-moz-transition-delay: .3s;
+	-o-transition-delay: .3s;
+	-ms-transition-delay: .3s;
+	transition-delay: .3s;
+}
+
+.make_transist {
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.hidescale {
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	-o-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	transform: scale(0.9);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+.showscale {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+
+	-webkit-transition-delay: .3s;
+	-moz-transition-delay: .3s;
+	-o-transition-delay: .3s;
+	-ms-transition-delay: .3s;
+	transition-delay: .3s;
+}
+
+.hideleft {
+	-webkit-transform: translateX(-100%);
+	-moz-transform: translateX(-100%);
+	-o-transform: translateX(-100%);
+	-ms-transform: translateX(-100%);
+	transform: translateX(-100%);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+.showleft {
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-o-transform: translateX(0px);
+	-ms-transform: translateX(0px);
+	transform: translateX(0px);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+
+	-webkit-transition-delay: .3s;
+	-moz-transition-delay: .3s;
+	-o-transition-delay: .3s;
+	-ms-transition-delay: .3s;
+	transition-delay: .3s;
+}
+
+.hidescaleup {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+.showscaleup {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+
+	-webkit-transition-delay: .3s;
+	-moz-transition-delay: .3s;
+	-o-transition-delay: .3s;
+	-ms-transition-delay: .3s;
+	transition-delay: .3s;
+}
+
+.hideflip {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+
+	-webkit-transform: rotatey(-90deg) scale(1.1);
+	-moz-transform: rotatey(-90deg) scale(1.1);
+	-o-transform: rotatey(-90deg) scale(1.1);
+	-ms-transform: rotatey(-90deg) scale(1.1);
+	transform: rotatey(-90deg) scale(1.1);
+
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform-origin: 50% 50%;
+	-o-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+}
+
+.showflip {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+
+	-webkit-transition-delay: .3s;
+	-moz-transition-delay: .3s;
+	-o-transition-delay: .3s;
+	-ms-transition-delay: .3s;
+	transition-delay: .3s;
+
+	-webkit-transform: rotatey(0deg) scale(1);
+	-moz-transform: rotatey(0deg) scale(1);
+	-o-transform: rotatey(0deg) scale(1);
+	-ms-transform: rotatey(0deg) scale(1);
+	transform: rotatey(0deg) scale(1);
+
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform-origin: 50% 50%;
+	-o-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+}
+
+.tabulous_active {
+	background: url("images/liste.jpg") no-repeat !important;
+	color: #655c89 !important;
+}
+
+.tabulousclear {
+	display: block;
+	clear: both;
+}
+
+/*************************************************************************
+******************** Effet feuille superposé******************************
+*************************************************************************/
+#tabs_container {
+	padding: 35px;
+	position: relative;
+	margin: -352px 0px 0px 240px;
+	width: 385px;
+	z-index: 1;
+	border: 1px solid rgba(0, 0, 0, 0.150);
+	height:500px;
+}
+
+#tabs_container div {
+	margin-right: 40px;
+}
+
+#tabs_container,
+#tabs_container:after,
+#tabs_container:before {
+	background: #fff;
+	box-shadow: 0 0 4px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 0 4px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 0 4px rgba(0,0,0,0.2);
+}
+
+#tabs_container:after,
+#tabs_container:before{
+	position: absolute;
+	top: 0; 
+	right: 3px; 
+	bottom: 0; 
+	left: -3px; 
+	content: "";
+	transform-origin: 100% 0;
+}
+
+#tabs_container:after{
+	transform: rotate(-0.6deg);
+	z-index: -9;
+}
+
+#tabs_container:before{
+	transform: rotate(-1.2deg);
+	right: 5px;
+	left: -5px;
+	z-index: -8;
+}
+
+/* on ré-hausse l'opacité des ombres */    
+    #tabs_container:after,  
+    #tabs_container:before,    
+    #tabs_container:focus:after,  
+    #tabs_container:focus:before  {  
+        box-shadow: 0 0 4px rgba(0,0,0,0.4);    
+    }  
+
